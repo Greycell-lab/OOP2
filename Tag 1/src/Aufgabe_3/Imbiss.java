@@ -23,4 +23,7 @@ public abstract class Imbiss {
     public static ArrayList<Imbiss> getListe() {
         return liste;
     }
+    public String toString(){
+        return "Bezeichnung: " + this.getBezeichnung() + "\nPreis: " + this.getPreis();
+    }
 }

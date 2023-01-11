@@ -10,7 +10,7 @@ public class Speise extends Imbiss {
     }
     @Override
     public String toString(){
-        return "Bezeichnung: " + this.getBezeichnung() + "\nPreis: " + this.getPreis() + "\nZutaten: " + this.zutaten.toString();
+        return super.toString() + "\nZutaten: " + this.zutaten.toString();
      }
 
 }

@@ -8,6 +8,6 @@ public class Getränk extends Imbiss {
     }
     @Override
     public String toString(){
-        return "Bezeichnung: " + this.getBezeichnung() + "\nPreis: " + this.getPreis() + "\nFüllmenge: " + this.milliliter + "ml";
+        return super.toString() + "\nFüllmenge: " + this.milliliter + "ml";
     }
 }
