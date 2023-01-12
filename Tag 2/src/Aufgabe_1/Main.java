@@ -11,6 +11,6 @@ public class Main {
             if(x instanceof IFahrbar f) f.fahren();
             if(x instanceof  ISchwimmfähig s) s.schwimmen();
         }
-        if(ISchwimmfähig.isArray)
+
     }
 }
