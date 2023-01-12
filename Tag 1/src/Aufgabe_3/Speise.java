@@ -1,10 +1,11 @@
 package Aufgabe_3;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class Speise extends Imbiss {
-    private ArrayList<String> zutaten = new ArrayList<>();
-    public Speise(String bezeichnung, double preis, ArrayList<String> zutaten){
+public class Speise extends Waren {
+    private List<String> zutaten = new ArrayList<>();
+    public Speise(String bezeichnung, double preis, List<String> zutaten){
         super(bezeichnung, preis);
         this.zutaten = zutaten;
     }

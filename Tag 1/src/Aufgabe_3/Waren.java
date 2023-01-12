@@ -2,11 +2,11 @@ package Aufgabe_3;
 
 import java.util.ArrayList;
 
-public abstract class Imbiss {
+public abstract class Waren {
     private String bezeichnung;
     private double preis;
-    static ArrayList<Imbiss> liste = new ArrayList<>();
-    protected Imbiss(String bezeichnung, double preis){
+    private static ArrayList<Waren> liste = new ArrayList<>();
+    protected Waren(String bezeichnung, double preis){
         this.bezeichnung = bezeichnung;
         this.preis = preis;
         liste.add(this);
@@ -20,9 +20,10 @@ public abstract class Imbiss {
         return preis;
     }
 
-    public static ArrayList<Imbiss> getListe() {
+    public static ArrayList<Waren> getListe() {
         return liste;
     }
+    @Override
     public String toString(){
         return "Bezeichnung: " + this.getBezeichnung() + "\nPreis: " + this.getPreis();
     }

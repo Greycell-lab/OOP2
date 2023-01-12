@@ -1,6 +1,6 @@
 package Aufgabe_3;
 
-public class Getränk extends Imbiss {
+public class Getränk extends Waren {
     private int milliliter;
     public Getränk(String bezeichnung, double preis, int milliliter){
         super(bezeichnung, preis);
