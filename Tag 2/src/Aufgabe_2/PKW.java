@@ -2,7 +2,7 @@ package Aufgabe_2;
 
 public class PKW {
     private TankfüllstandLeuchte leuchte = new TankfüllstandLeuchte("Rot");
-    public static TankfüllstandBeobachter beobachter;
+    public static TankfüllstandBeobachter beobachter = new Fahrer();
     private int tankfüllstand;
 
     public PKW(int tankfüllstand) {
@@ -22,9 +22,7 @@ public class PKW {
     }
 
     public void onTankfüllstandNiedrig() {
-        TankfüllstandBeobachter.onTankfüllstandNiedrig(this);
     }
-
     public TankfüllstandLeuchte getLeuchte() {
         return leuchte;
     }
