@@ -1,9 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        Display arr = new Display();
+        /*Display arr = new Display();
         arr.x = 0;
         arr.cal(2);
-        System.out.println(arr.x);
+        System.out.println(arr.x);*/
+        ForEach.forEachListe(ForEach.liste);
     }
 }
 interface calculate{

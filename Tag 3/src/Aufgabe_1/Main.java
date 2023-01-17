@@ -1,5 +1,7 @@
 package Aufgabe_1;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         new Kunde("Peter");
@@ -10,9 +12,9 @@ public class Main {
             }
         };
         new Kunde("Anna");
-        for(var x : Kunde.kunden) drucken(x);
+        drucken(Kunde.kunden);
     }
-    public static void drucken(IDruckbar druckbar){
-        System.out.println(druckbar.getInfo());
+    public static void drucken(ArrayList<IDruckbar> druckbar){
+        for(var x : druckbar) System.out.println(x.getInfo());
     }
 }

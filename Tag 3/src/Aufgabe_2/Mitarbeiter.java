@@ -6,7 +6,6 @@ public class Mitarbeiter {
     public static ArrayList<Mitarbeiter> mitarbeiter = new ArrayList<>();
     private String name;
     private int nummer;
-    private static boolean passed;
     public static StringConverter stringConverter = new StringConverter() {
         @Override
         String toString(Object obj) {
