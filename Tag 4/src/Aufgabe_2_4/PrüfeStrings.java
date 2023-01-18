@@ -1,4 +1,4 @@
-package Aufgabe_2;
+package Aufgabe_2_4;
 
 public interface PrüfeStrings {
     boolean prüfen(String a, String b);

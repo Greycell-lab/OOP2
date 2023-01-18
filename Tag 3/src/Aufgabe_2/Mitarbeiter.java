@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Mitarbeiter {
     public static ArrayList<Mitarbeiter> mitarbeiter = new ArrayList<>();
-    private String name;
-    private int nummer;
+    private final String name;
+    private final int nummer;
     public static StringConverter stringConverter = new StringConverter() {
         @Override
         String toString(Object obj) {

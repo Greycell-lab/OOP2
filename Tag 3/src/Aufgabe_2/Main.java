@@ -6,8 +6,8 @@ public class Main {
         new Mitarbeiter("Peter", 1);
         new Mitarbeiter("Klaus", 6);
         Mitarbeiter neu;
-        try {
-            neu = (Mitarbeiter)Mitarbeiter.stringConverter.fromString("3");
+        try{
+            neu = (Mitarbeiter)Mitarbeiter.stringConverter.fromString("6");
             System.out.println(neu.getName());
         }catch(NullPointerException e){
             System.out.println("Mitarbeiter-Nummer nicht gefunden.");
