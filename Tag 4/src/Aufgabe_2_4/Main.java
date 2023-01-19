@@ -6,8 +6,8 @@ public class Main {
         PrüfeStrings a = PrüfeStrings::A_IstLängerAls_B;
         PrüfeStrings b = PrüfeStrings::A_HatMehrEAls_B;
         PrüfeStrings c = (s1, s2) -> s1.length() > s2.length();
-        //PrüfeStrings.Sortiere(arr, a);
-        PrüfeStrings.Sortiere(arr, c);
+        PrüfeStrings.Sortiere(arr, b);
+        //PrüfeStrings.Sortiere(arr, c);
         PrüfeStrings.Ausgabe(arr);
     }
 }

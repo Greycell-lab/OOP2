@@ -1,7 +1,6 @@
 package Aufgabe_3;
 
 import java.util.ArrayList;
-import java.util.ConcurrentModificationException;
 import java.util.function.Predicate;
 
 public class Main {
@@ -11,7 +10,7 @@ public class Main {
         list.add("Auto");
         list.add("Gitarre");
         list.add("Abrakadabra");
-        list.add("Java ist toller als andere Programmiersprachen");
+        list.add("Java ist auch eine ganz gute Programmiersprache");
         System.out.println(list);
         Predicate<String> predicate = (string) -> string.length() < 15;
         System.out.println("Gelöscht: " + meinRemoveAll(list, predicate));

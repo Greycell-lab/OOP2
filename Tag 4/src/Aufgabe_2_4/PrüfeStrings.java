@@ -7,8 +7,8 @@ public interface PrüfeStrings {
     }
     static boolean A_HatMehrEAls_B(String a, String b){
         int countA = 0, countB = 0;
-        for(int i=0;i<a.length();i++) if(a.charAt(i) == 'e' || a.charAt(i) == 'E') countA++;
-        for(int i=0;i<b.length();i++) if(b.charAt(i)== 'e' || b.charAt(i) == 'E') countB++;
+        for(int i=0;i<a.length();i++) if(a.toLowerCase().charAt(i) == 'e') countA++;
+        for(int i=0;i<b.length();i++) if(b.toLowerCase().charAt(i) == 'e') countB++;
         return countA > countB;
     }
     static void Sortiere(String[] array, PrüfeStrings prüfe) {
