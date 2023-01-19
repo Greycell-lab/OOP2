@@ -1,5 +1,5 @@
 package Aufgabe_3;
 
-public interface BerechnungsService {
+public interface Berechenbar {
     double berechneVersand(Bestellung bestellung);
 }
