@@ -15,12 +15,23 @@ public class Adresse {
         this.postleitzahl = postleitzahl;
         this.land = land;
     }
-    @Override
-    public String toString(){
-        return "Name: " + name + "\nStraße: " + strasse + "\nPLZ: " + postleitzahl + " " + stadt + "\nLand: " + land + "\n";
-    }
-
     public String getLand() {
         return land;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getStrasse() {
+        return strasse;
+    }
+
+    public String getStadt() {
+        return stadt;
+    }
+
+    public String getPostleitzahl() {
+        return postleitzahl;
     }
 }

@@ -1,13 +1,13 @@
 package Aufgabe_3;
 
-public class Bestellung {
+public class Versand {
     private final Adresse zielort;
     private final Adresse herkunft;
     private String versandArt;
     private Berechenbar versandBerechnung;
     private double versandKosten;
 
-    Bestellung(Adresse zielort, Adresse herkunft, Berechenbar versandBerechnung){
+    Versand(Adresse zielort, Adresse herkunft, Berechenbar versandBerechnung){
         this.zielort = zielort;
         this.herkunft = herkunft;
         this.versandBerechnung = versandBerechnung;
@@ -21,7 +21,7 @@ public class Bestellung {
         this.versandArt = versandArt;
     }
     public String toString(){
-        return zielort + "\n" + herkunft + "\n" + "Versandart: " + versandArt + "\n" + "Versandkosten: " + versandKosten;
+        return "Empfänger\t\t\t\tAbsender\n"+ zielort.getName() + "\t\t\t" + herkunft.getName() + "\n" + zielort.getStrasse() + "\t\t\t" + herkunft.getStrasse() + "\n" + zielort.getPostleitzahl() + " " + zielort.getStadt() + "\t\t\t" + herkunft.getPostleitzahl() + " " + herkunft.getStadt() + "\n" + zielort.getLand() + "\t\t\t\t\t\t" + herkunft.getLand() + "\nVersandart: " + versandArt + "\nKosten: " + String.format("%.2f",versandKosten) + "€";
     }
 
     public Adresse getZielort() {
