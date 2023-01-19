@@ -14,7 +14,7 @@ public class VersandkostenBerechnung {
 			//System.out.println("-----------------------------------------");
 			//System.out.println(bestellung);
 			System.out.println(versand1);
-			versand1.setBerechnung(new VersandDHL());
+			versand1.setBerechnung(new VersandAPL());
 			System.out.println("-----------------------------------------");
 			System.out.println(versand1);
 
