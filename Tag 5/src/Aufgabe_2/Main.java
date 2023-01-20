@@ -4,12 +4,13 @@ import java.util.Scanner;
 
 public class Main {
     static Scanner sc = new Scanner(System.in);
-    static Operation op;
+    static Operate op;
     public static void main(String[] args) {
         double a = 0, b = 0;
+        char operation;
         System.out.println("Verfügbare Operationen: -, +, *, /");
         System.out.print("Wähle eine Operation: ");
-        char operation = new Scanner(System.in).next().charAt(0);
+        operation = new Scanner(System.in).next().charAt(0);
         try{
             System.out.print("1. Zahl eingeben: ");
             a = Double.parseDouble(sc.nextLine());
@@ -19,11 +20,11 @@ public class Main {
             System.out.println("Falsches Zahlenformat");
         }
         switch(operation){
-            case '+' -> op = new Operation(new Addition());
-            case '-' -> op = new Operation(new Substraction());
-            case '*' -> op = new Operation(new Multiplication());
-            case '/' -> op = new Operation(new Division());
+            case '+' -> op = new Addition();
+            case '-' -> op = new Substraction();
+            case '*' -> op = new Multiplication();
+            case '/' -> op = new Division();
         }
-        System.out.println(a + " " + operation + " " + b + " = " + op.getOperation().operationResult(a, b));
+        System.out.println(a + " " + operation + " " + b + " = " + op.operationResult(a, b));
     }
 }
