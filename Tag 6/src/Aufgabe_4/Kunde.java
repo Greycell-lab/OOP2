@@ -16,8 +16,8 @@ public class Kunde{
         this.lieblingsgeschmacksrichtung = lieblingsgeschmacksrichtung;
         kunden.add(this);
     }
-    public void addObserver(Bäckerei bäckerei){
-        observer.add(bäckerei);
+    public void addObserver(Observer ob){
+        observer.add(ob);
     }
     public void notifyObserver(){
         observer.forEach(o -> o.update(this));
