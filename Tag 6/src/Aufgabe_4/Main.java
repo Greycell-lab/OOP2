@@ -1,9 +1,11 @@
 package Aufgabe_4;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Main {
     public static void main(String[] args) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
         LocalDate today = LocalDate.now();
         Bäckerei bäckerei = new Bäckerei();
         Familie familie = new Familie();
@@ -15,7 +17,7 @@ public class Main {
         marge.addObserver(familie);
         lisa.addObserver(bäckerei);
         while(true) {
-            System.out.println("Heutiges Datum: " + today);
+            System.out.println("Heutiges Datum: " + today.format(formatter));
             for(var x : Kunde.kunden){
                 if (today.isEqual(x.getGeburtstag())) x.notifyObserver();
             }

@@ -17,8 +17,7 @@ public class History implements IObserver {
         save(daten);
     }
     public void save(SensorDaten daten){
-        try {
-            OutputStream stream = new FileOutputStream("sensordaten.txt", true);
+        try (OutputStream stream = new FileOutputStream("sensordaten.txt", true)){
             String messdaten = daten.getDateTime().format(formatter) + " --> " + daten.getMesswert() + "\n";
             stream.write(messdaten.getBytes());
             System.out.println("Gespeichert");
