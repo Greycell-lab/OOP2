@@ -16,15 +16,16 @@ public class History implements IObserver {
         System.out.println("Neue Daten werden gespeichert...");
         save(daten);
     }
-    public void save(SensorDaten daten){
-        try (OutputStream stream = new FileOutputStream("sensordaten.txt", true)){
+    public void save(SensorDaten daten) {
+        try (OutputStream stream = new FileOutputStream("sensordaten.txt", true)) {
             String messdaten = daten.getDateTime().format(formatter) + " --> " + daten.getMesswert() + "\n";
             stream.write(messdaten.getBytes());
+            stream.close();
             System.out.println("Gespeichert");
-        }catch(FileNotFoundException e){
-            System.out.println("Datei nicht gefunden...");
-        }catch(IOException e){
-            System.out.println("Fehler beim Schreiben der Datei...");
+        } catch (FileNotFoundException e) {
+            System.err.println("Datei nicht gefunden...");
+        } catch (IOException e) {
+            System.err.println("Fehler beim Schreiben der Datei...");
         }
     }
 }
