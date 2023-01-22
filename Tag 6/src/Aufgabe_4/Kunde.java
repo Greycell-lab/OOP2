@@ -8,8 +8,8 @@ public class Kunde{
     public static ArrayList<Kunde> kunden = new ArrayList<>();
     public ArrayList<Observer> observer = new ArrayList<>();
     private final String name;
-    private LocalDate geburtstag;
-    private String lieblingsgeschmacksrichtung;
+    private final LocalDate geburtstag;
+    private final String lieblingsgeschmacksrichtung;
     public Kunde(String name, LocalDate geburtstag, String lieblingsgeschmacksrichtung){
         this.name = name;
         this.geburtstag = geburtstag;
