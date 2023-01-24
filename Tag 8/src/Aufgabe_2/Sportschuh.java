@@ -6,6 +6,6 @@ public class Sportschuh extends Schuh {
     }
     @Override
     public void gebeSchuhAus() {
-        System.out.println("Sportschuhe wurden erstellt in der " + fabrik.getClass().getSimpleName());
+        System.out.println("Sportschuhe wurden erstellt in der " + getFabrik().getClass().getSimpleName());
     }
 }

@@ -6,6 +6,6 @@ public class Sandalen extends Schuh {
     }
     @Override
     public void gebeSchuhAus() {
-        System.out.println("Sandalen wurden erstellt in der " + fabrik.getClass().getSimpleName());
+        System.out.println("Sandalen wurden erstellt in der " + getFabrik().getClass().getSimpleName());
     }
 }
