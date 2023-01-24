@@ -7,7 +7,7 @@ import java.io.OutputStream;
 import java.time.format.DateTimeFormatter;
 
 public class History implements IObserver {
-    static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy hh:mm:ss");
+    private static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy hh:mm:ss");
     public History(SensorDaten daten){
         daten.addObserver(this);
     }
@@ -25,7 +25,7 @@ public class History implements IObserver {
         } catch (FileNotFoundException e) {
             System.err.println("Datei nicht gefunden...");
         } catch (IOException e) {
-            System.err.println("Fehler beim Schreiben der Datei...");
+            System.err.println("Fehler beim Schreiben der DatMit ei...");
         }
     }
 }

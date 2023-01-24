@@ -2,16 +2,11 @@ package Aufgabe_1;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Locale;
 
 public class SensorDaten {
+    private final ArrayList<IObserver> observerListe = new ArrayList<>();
     private double messwert;
     private LocalDateTime dateTime;
-    public SensorDaten(double messwert){
-        this.messwert = messwert;
-        dateTime = LocalDateTime.now();
-    }
-    private ArrayList<IObserver> observerListe = new ArrayList<>();
     public void addObserver(IObserver observer){
         observerListe.add(observer);
     }
@@ -23,7 +18,7 @@ public class SensorDaten {
         dateTime = LocalDateTime.now();
         notifyObservers();
     }
-    public void notifyObservers(){
+    private void notifyObservers(){
         observerListe.forEach(o -> o.update(this));
     }
     public double getMesswert(){
@@ -33,4 +28,5 @@ public class SensorDaten {
     public LocalDateTime getDateTime() {
         return dateTime;
     }
+
 }
