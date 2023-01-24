@@ -9,7 +9,8 @@ public class Werkstatt implements Observer{
     }
     @Override
     public void sendeSMS(Kunde kunde) {
-        System.out.println("SMS an: " + kunde.getTelefonnummer() + "gesendet");
+        System.out.println(kunde.toString());
+        System.out.println("SMS an: " + kunde.getTelefonnummer() + " gesendet");
     }
     public void setBearbeitung(Fahrzeug fahrzeug){
         fahrzeug.setBearbeitet(true);

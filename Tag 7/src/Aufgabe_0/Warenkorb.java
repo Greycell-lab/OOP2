@@ -6,7 +6,6 @@ public class Warenkorb {
     private HashMap<Artikel, Integer> warenkorb = new HashMap<>();
     private Versand versandArt;
     private double gesamtWert;
-
     public void setVersandArt(Versand versandArt) {
         this.versandArt = versandArt;
     }
