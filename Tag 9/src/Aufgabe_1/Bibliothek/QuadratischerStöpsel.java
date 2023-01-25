@@ -1,6 +1,6 @@
 package Aufgabe_1.Bibliothek;
 
-public class QuadratischerStöpsel{
+public class QuadratischerStöpsel {
     private double seitenlänge;
 
     public QuadratischerStöpsel(double seitenlänge) {

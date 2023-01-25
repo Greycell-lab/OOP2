@@ -1,7 +1,5 @@
 package Aufgabe_1.Bibliothek;
 
-import Aufgabe_1.Bibliothek.QuadratischerStöpsel;
-
 public class RundesLoch {
     private double radius;
 
