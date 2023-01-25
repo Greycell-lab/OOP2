@@ -9,8 +9,9 @@ public class RundesLoch {
         this.radius = radius;
     }
     public String prüfeStöpsel(Stöpsel stöpsel){
-        if(stöpsel instanceof QuadratischerStöpsel) new QuadratischZuRundAdapter((QuadratischerStöpsel)stöpsel).convert();
-        return stöpsel.radius <= this.radius ? "passt" : "passt nicht";
+        double temp = 0;
+        if(stöpsel instanceof QuadratischerStöpsel) temp = new QuadratischZuRundAdapter((QuadratischerStöpsel)stöpsel).convert();
+        return temp <= this.radius ? "passt" : "passt nicht";
     }
 
     public double getRadius() {
