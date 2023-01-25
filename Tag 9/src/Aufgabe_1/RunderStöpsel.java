@@ -1,6 +1,6 @@
 package Aufgabe_1;
 
-public class RunderStöpsel extends Stöpsel{
+public class RunderStöpsel{
     double radius;
 
     public RunderStöpsel(double radius) {
