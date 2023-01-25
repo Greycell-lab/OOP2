@@ -1,10 +1,10 @@
 package Aufgabe_1;
 
 import Aufgabe_1.Bibliothek.QuadratischerStöpsel;
+import Aufgabe_1.Bibliothek.RundesLoch;
 
 public class QuadratischZuRundAdapter {
     QuadratischerStöpsel quadratischerStöpsel;
-
     public QuadratischZuRundAdapter(QuadratischerStöpsel stöpsel) {
         this.quadratischerStöpsel = stöpsel;
     }

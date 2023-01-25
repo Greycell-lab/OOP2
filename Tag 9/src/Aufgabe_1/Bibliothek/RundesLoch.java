@@ -1,4 +1,4 @@
-package Aufgabe_1;
+package Aufgabe_1.Bibliothek;
 
 import Aufgabe_1.Bibliothek.QuadratischerStöpsel;
 
